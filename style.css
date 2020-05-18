@@ -18,15 +18,18 @@ THIS CSS KILLS 🖖🏻
 IMPORTS
 ==================================================*/
 
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+
 /*==================================================
-COLOURS
+COLOURS 
 ==================================================*/
 
 :root {
-    --col-1: #ccac00;
-    --col-2: #18181A;
-    --col-3: #F7F7F7;
-    --col-4: #da4820;
+    --col-1: #E65145;
+    --col-2: #F6F3EB;
+    --col-3: #cc9347;
+	--col-4: #45dae6;
+	--col-5: #732822;
 }
 
 /*==================================================
@@ -35,7 +38,7 @@ P, H1, H2, H3, H4, H5, H6
 
 :root {
 	/* P */
-	--font-p: 'MadrasExtraLight';
+	--font-p: 'Arapey';
 	--font-p-size: 1rem;
 	
 	/* H1 */
@@ -100,6 +103,7 @@ BODY
 
 p {
 	font-size: 16px;
+	font-family: var(--font-p);
 }
 
 /*==================================================
@@ -114,6 +118,8 @@ GRID
 	grid-gap: 3px;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: repeat(12, 1fr);
+
+	background-color: var(--col-1);
 }
 
 /*==================================================
@@ -133,7 +139,14 @@ section {
 }
 
 article {
-	
+	padding-top: var(--pad-top);
+	padding-bottom: var(--pad-but);
+	background-color: var(--col-2);
+	transform: rotate(5deg)
+}
+
+article p {
+	font-size: 5rem;
 }
 
 aside {
